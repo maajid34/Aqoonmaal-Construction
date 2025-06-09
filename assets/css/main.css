@@ -1667,7 +1667,17 @@ section {
 .contact .info-item {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
   padding: 20px 0 30px 0;
+  background-color: #00A651;
+ 
+ 
   
+}
+
+.contact .info-item:hover{
+
+    animation: cont;
+    animation-duration: 5s;
+ background-color: red;
 }
 
 
@@ -1679,16 +1689,26 @@ section {
   height: 56px;
   font-size: 24px;
   line-height: 0;
-  color: #00A651;
+  color: white;
   border-radius: 50%;
   border: 2px dotted #00A651;
 }
 
 .contact .info-item h3 {
   font-size: 20px;
-  color: #6c757d;
+  color: #fff;
   font-weight: 700;
   margin: 10px 0;
+}
+
+@keyframes cont{
+    from{
+ transform: rotate(2deg);
+    }
+    to{
+ transform: rotate(0deg);
+    }
+   
 }
 
 .contact .info-item p {
@@ -1696,6 +1716,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: #fff;
 }
 
 .contact .php-email-form {
